@@ -77,7 +77,7 @@ const RightSideContainer = () => {
             cal.com
           </a>{" "}
           — built to enhance my skills in <span>NEXT.js</span> and explore
-          full-stack development. If you're interested in contributing or
+          full-stack development. If you&apos;re interested in contributing or
           reviewing the code, feel free to visit the GitHub repository:&nbsp;
           <a
             href="https://github.com/PiyushPb/appoints"
