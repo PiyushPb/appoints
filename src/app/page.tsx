@@ -1,4 +1,6 @@
+import CompaniesThatChooseUs from "@/components/landingPage/CompaniesThatChooseUs";
 import LandingCTA from "@/components/landingPage/LandingCTA";
+import WithUsSection from "@/components/landingPage/WithUsSection";
 import LayoutContainer from "@/components/layout/layoutContainer";
 import React from "react";
 
@@ -9,9 +11,10 @@ function page() {
         <LandingCTA />
       </LayoutContainer>
       <LayoutContainer>
-        <h1 className="text-3xl font-bold underline text-red-600">
-          Hello world!
-        </h1>
+        <CompaniesThatChooseUs />
+      </LayoutContainer>
+      <LayoutContainer className="py-[60px] md:py-[94px]">
+        <WithUsSection />
       </LayoutContainer>
     </main>
   );

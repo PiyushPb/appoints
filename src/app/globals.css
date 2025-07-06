@@ -134,6 +134,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 .secondaryFont {
   font-family: "Outfit", sans-serif;
   font-weight: 400;
@@ -141,63 +142,32 @@
   font-optical-sizing: auto;
 }
 
-.divider-container {
-  align-content: center;
-  align-items: center;
-  display: flex;
-  flex: none;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 10px;
-  height: 32px;
-  justify-content: center;
-  overflow: hidden;
-  padding: 0;
-  position: relative;
-  width: 100%;
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-.layout-line {
-  flex: none;
-  height: 1px;
-  left: 0;
-  min-width: 100%;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: calc(50.00000000000002% - 1px / 2);
-  z-index: 1;
+.animate-rotateAnimation {
+  animation: rotateAnimation 8s linear infinite;
+  transform-origin: center;
 }
 
-.inner-divider {
-  align-content: center;
-  align-items: center;
-  display: flex;
-  flex: 1 0 0px;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 2px;
-  height: 28px;
-  justify-content: center;
-  max-width: 1224px;
-  overflow: visible;
-  padding: 0;
-  position: relative;
-  width: 1px;
+@keyframes counterRotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
-.layout-icon-wrapper {
-  align-items: center;
+.counter-rotate {
+  animation: counterRotateAnimation 8s linear infinite;
   display: flex;
-  flex: none;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 10px;
-  height: min-content;
+  align-items: center;
   justify-content: center;
-  overflow: hidden;
-  padding: 0;
-  position: relative;
-  width: min-content;
-  z-index: 1;
 }
